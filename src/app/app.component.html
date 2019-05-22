@@ -1,0 +1,16 @@
+
+<app-test></app-test>
+
+<app-event-binding></app-event-binding>
+
+<app-reference-variable></app-reference-variable>
+
+<app-directives></app-directives>
+<div>
+    <h2>{{message}}</h2>
+</div>
+<app-component-interaction (childEvent)="message= $event" [parentData]="name"></app-component-interaction>
+
+<app-pipes-demo></app-pipes-demo>
+
+<router-outlet></router-outlet>
